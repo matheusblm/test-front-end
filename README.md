@@ -12,7 +12,7 @@ Sua missão é criar uma landing page (página estática) para buscar, listar e 
 
 O layout inteiro é livre, mas a lista deverá conter no mínimo **nome** e **imagem** do personagem.
 
-Sobre a busca, ela poderá ser feita de digitando o nome do personagem.
+Sobre a busca, ela poderá ser feita digitando o nome do personagem e retornando o personagem correspondente.
 
 Seria interessante ordenar a lista também. Pensamos em pelo menos dois tipos: por ID do Personagem (padrão) ou por nome (ordem alfabética).
 
