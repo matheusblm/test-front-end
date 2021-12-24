@@ -14,7 +14,8 @@ export const FilterChar = ({ setCharactersListFilter }) => {
             a.name > b.name ? 1 : b.name > a.name ? -1 : 0
           )
         )
-      );
+      )
+      .catch((err) => console.log(err));
   };
   const handleClick = () => {
     if (userInput.trim() !== "") {
@@ -34,6 +35,8 @@ export const FilterChar = ({ setCharactersListFilter }) => {
           type="text"
           value={userInput}
           onChange={(event) => setUserInput(event.target.value)}
+          borderColor="#42b4ca"
+          _focus={{ borderColor: "#accb41" }}
         />
         <InputRightElement width="4.5rem">
           <Button h="1.75rem" size="sm" onClick={handleClick}>

@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   Heading,
   HStack,
@@ -31,38 +32,41 @@ export const CharModal = ({ onClose, isOpen, character }) => {
                 alt={character.name}
                 borderRadius="10px"
               />
+              <Box w="100%" p="20px">
+                <VStack>
+                  <HStack w="100%">
+                    <Heading fontSize="md">Status:</Heading>
+                    <Text>{character.status}</Text>
+                  </HStack>
 
-              <HStack w="100%">
-                <Heading fontSize="md">Status:</Heading>
-                <Text>{character.status}</Text>
-              </HStack>
+                  <HStack w="100%">
+                    <Heading fontSize="md">Gênero:</Heading>
+                    <Text>{character.gender}</Text>
+                  </HStack>
 
-              <HStack w="100%">
-                <Heading fontSize="md">Gênero:</Heading>
-                <Text>{character.gender}</Text>
-              </HStack>
+                  <HStack w="100%">
+                    <Heading fontSize="md">Espécie:</Heading>
+                    <Text>{character.species}</Text>
+                  </HStack>
 
-              <HStack w="100%">
-                <Heading fontSize="md">Espécie:</Heading>
-                <Text>{character.species}</Text>
-              </HStack>
+                  <HStack w="100%">
+                    <Heading fontSize="md">Tipo:</Heading>
+                    <Text>
+                      {character.type === "" ? "unknown" : character.type}
+                    </Text>
+                  </HStack>
 
-              <HStack w="100%">
-                <Heading fontSize="md">Tipo:</Heading>
-                <Text>
-                  {character.type === "" ? "Desconhecido" : character.type}
-                </Text>
-              </HStack>
+                  <HStack w="100%">
+                    <Heading fontSize="md">Planeta de origem:</Heading>
+                    <Text>{character.origin.name}</Text>
+                  </HStack>
 
-              <HStack w="100%">
-                <Heading fontSize="md">Planeta de origem:</Heading>
-                <Text>{character.origin.name}</Text>
-              </HStack>
-
-              <HStack w="100%">
-                <Heading fontSize="md">Localizaçao:</Heading>
-                <Text>{character.location.name}</Text>
-              </HStack>
+                  <HStack w="100%">
+                    <Heading fontSize="md">Localizaçao:</Heading>
+                    <Text>{character.location.name}</Text>
+                  </HStack>
+                </VStack>
+              </Box>
             </VStack>
           </ModalBody>
 
