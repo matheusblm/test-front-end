@@ -1,10 +1,12 @@
 import { Flex } from "@chakra-ui/react";
+import { Header } from "./components/Header";
 import { List } from "./components/List";
 
 function App() {
   return (
     <div>
-      <Flex>
+      <Flex flexDirection="column">
+        <Header />
         <List />
       </Flex>
     </div>

@@ -70,8 +70,9 @@ export const CharModal = ({ onClose, isOpen, character }) => {
             <Button
               w="200px"
               transition="0.5s"
-              bg="#373F51"
+              bg="#42b4ca"
               color="white"
+              _hover={{ bg: "#accb41" }}
               onClick={onClose}
             >
               Close
