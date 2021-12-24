@@ -5,7 +5,7 @@ export const theme = extendTheme({
   styles: {
     global: {
       body: {
-        bg: "white",
+        bg: "#e6e9f0",
         color: "black",
         fontFamily: "Lato",
       },

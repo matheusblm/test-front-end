@@ -72,10 +72,26 @@ export const List = () => {
               ))}
             </SimpleGrid>
           )}
-          <Box mt="5">
-            <Button onClick={previousPage}>Previous</Button>
-            <Button onClick={nextPage}>Next</Button>
-          </Box>
+          <Flex mt="5" justifyContent="center" gap="5%">
+            <Button
+              w="200px"
+              transition="0.5s"
+              bg="#373F51"
+              onClick={() => previousPage()}
+              color="#f1f1ef"
+            >
+              Pagina Anterior
+            </Button>
+            <Button
+              w="200px"
+              transition="0.5s"
+              bg="#373F51"
+              onClick={() => nextPage()}
+              color="#f1f1ef"
+            >
+              Proxima Pagina
+            </Button>
+          </Flex>
         </Box>
       </Flex>
     </>
